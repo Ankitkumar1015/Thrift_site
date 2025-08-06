@@ -9,20 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <a href="index.html">
-      <h1 class="logo">Thrift<span>Style</span></h1>
-    </a>
-      <input type="text" placeholder="Search for clothes..." class="search-box">
-      <div class="nav-icons">
-        <span>♥</span>
-        <span>🛒</span>
-        <img src="https://i.imgur.com/WtNnEPO.png" class="profile-pic" alt="User Profile">
-      </div>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Thrift<span>Style</span></div>
+    <input type="text" class="search" placeholder="Search for clothes..." />
+    <div class="icons">
+      <span>🤍</span>
+      <span>💬</span>
+      <span>🛒</span>
+      <span class="avatar">👩‍🦰</span>
     </div>
   </header>
-
   <main class="profile-container">
     <section class="user-header">
       <img src="https://i.imgur.com/gkXMFpL.png" class="user-img" alt="User Photo">
@@ -128,5 +125,14 @@
     </div>
     <p class="copyright">&copy; 2025 ThriftStyle. All rights reserved.</p>
   </footer>
+
+
+  <!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.24.0/firebase-storage.js"></script>
+<script type="module" src="firebase.js"></script>
+
 </body>
 </html>
